@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "things-cli"
+version = "0.1.0"
+description = "A macOS CLI for reading, reviewing, exporting, and updating Things todos."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = ["things", "things3", "todo", "cli", "macos", "productivity"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: MacOS X",
+  "Intended Audience :: End Users/Desktop",
+  "Operating System :: MacOS",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Office/Business :: Scheduling",
+  "Topic :: Utilities",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/marvinvista/things-cli"
+Repository = "https://github.com/marvinvista/things-cli"
+Issues = "https://github.com/marvinvista/things-cli/issues"
+Documentation = "https://github.com/marvinvista/things-cli/tree/main/docs"
+
+[project.scripts]
+things = "things_cli.cli:main"
+things-cli = "things_cli.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["things_cli*"]

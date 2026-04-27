@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest an improvement for things-cli.
+title: "Feature: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What workflow should this make safer or easier?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should the CLI do?
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety expectations
+      options:
+        - label: This should preserve dry-run-first behavior for mutations.
+        - label: This should support `--json` if it is useful for agents/scripts.

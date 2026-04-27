@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a problem with things-cli.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove private todo names, notes, tags, and project names before posting logs.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command
+      description: The exact command, with private values sanitized.
+      render: sh
+    validations:
+      required: true
+  - type: textarea
+    id: diagnose
+    attributes:
+      label: things diagnose
+      description: Sanitized output from `things diagnose`.
+      render: json
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+  - type: input
+    id: things
+    attributes:
+      label: Things version
+  - type: input
+    id: install
+    attributes:
+      label: Install method
+      placeholder: pipx, local clone, development venv

@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+*.whl
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+things-snapshot.json
+things-full-snapshot.json
+things-before.json
+things-after.json
+*.log
