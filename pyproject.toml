@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "A macOS CLI for reading, reviewing, exporting, and updating Things todos."
 readme = "README.md"
 requires-python = ">=3.10"
-license = "MIT"
+license = { text = "MIT" }
 keywords = ["things", "things3", "todo", "cli", "macos", "productivity"]
 classifiers = [
   "Development Status :: 3 - Alpha",
